@@ -8,6 +8,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <style>
+  .about-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+
+.headshot {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+  border: 2px solid var(--border);
+}
+
+@media (max-width: 600px) {
+  .about-header { flex-direction: column; gap: 16px; }
+  .headshot { width: 72px; height: 72px; }
+}
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -328,9 +349,9 @@
 
       <section class="hero">
         <p class="hero-eyebrow">Marketing &amp; Brand</p>
-        <h1>Content that moves<br>skeptical buyers.</h1>
+        <h1>Every brand needs a story worth telling.</h1>
         <p class="hero-bio">
-          I build brand and content for companies selling into public institutions — government agencies, universities, health systems, transit operators. Seven years across govtech, transit technology, and climate. I write, strategize, and produce work that earns trust before it earns a click.
+          I build brand and content for companies selling into public institutions — government agencies, transit agencies, universities. Seven years across govtech, transit technology, and climate. I strategize brand and produce work that earns trust.
         </p>
         <div class="hero-meta">
           <a href="mailto:ddrees17@gmail.com">ddrees17@gmail.com</a>
@@ -358,7 +379,7 @@
             <p class="work-eyebrow">White Paper — TripShot</p>
             <p class="work-title">Security at TripShot: Building Trust with Risk-Averse Buyers</p>
             <p class="work-desc">
-              A security white paper written for public sector procurement teams — the most skeptical, compliance-driven audience in B2B. Translated layered technical infrastructure (ISO 27001, SOC-2, NIST) into clear, credible prose that non-technical decision-makers could act on. The job wasn't to explain the product — it was to remove the objection.
+              A security white paper written for skeptical and compliance-driven prospective customer in B2G. Translated layered technical infrastructure (ISO 27001, SOC-2, NIST) into clear, credible prose for non-technical decision-makers. The job wasn't to explain the product — it was to remove the objection.
             </p>
             <span class="work-link-label">View white paper →</span>
           </a>
@@ -388,7 +409,7 @@
             <p class="work-eyebrow">Brand Video — ETA Transit Systems</p>
             <p class="work-title">Customer Testimonial Film: Real Operators, Real Relationships</p>
             <p class="work-desc">
-              Directed the videographer and led post-production editorial — specifically the splicing strategy to surface the strongest client voices. The result is a homepage brand asset built entirely around authentic customer relationships. Demonstrates the ability to produce credible, mission-forward video without a large production budget or team.
+              Led post-production editorial — specifically the splicing strategy to surface the strongest client voices. The result is a homepage brand asset built entirely around authentic customer relationships. Demonstrates the ability to produce credible, mission-forward video without a large production budget or team.
             </p>
             <span class="work-link-label">Watch video →</span>
           </a>
@@ -418,16 +439,21 @@
 
       <section class="section" id="about">
         <p class="section-label">About</p>
-        <div class="about-text">
+        <div class="about-header">
+  <img class="headshot" src="data:image/jpeg;base64,/9j/4AAQ...PASTE_FULL_BASE64_HERE...==" alt="Danny Drees" />
+  <div class="about-text">
           <p>
-            I've spent seven years building marketing and content for companies selling into institutions — public transit agencies, universities, government procurement offices, health systems. The buyers are cautious. The sales cycles are long. The stakes for the people being served are real. That context shapes how I write and how I think about brand.
+            I've spent seven years building brand, marketing and content for companies selling into institutions — public transit agencies, universities, government procurement offices. The buyers are cautious. The sales cycles are long. The stakes for the people being served are real. That context shapes how I write and how I think about brand.
           </p>
           <p>
             My background spans product marketing, proposals, editorial content, and brand strategy across B2B SaaS, transit technology, nonprofit associations, and climate. I've built content engines, written white papers that moved enterprise deals, and developed brand guidelines for startups building their identity from scratch.
           </p>
           <p>
-            Before that: APTA, where I worked at the center of federal transit policy and built communications for an industry association representing agencies that move tens of millions of people daily. Government credibility isn't a background detail — it's where I come from.
+            Before that: APTA, where I worked in public transportation technology and built communications for an industry association representing agencies that move tens of millions of people daily. Government credibility isn't a background detail — it's where I come from.
           </p>
+    </p>
+      </div>
+    </div>
         </div>
       </section>
 
